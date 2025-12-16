@@ -1,9 +1,29 @@
-Git clone
+Project installeren (Laravel)
 
-Type in je terminal in het project dat je zojuist heb gedownload composer install
+Volg de onderstaande stappen om het project correct te installeren.
 
-Kopieer het bestand .env.example en hernoem het naar .env
+1. Project clonen
+Clone het project via Git:
 
-Resultaat moet zijn, je hebt 1 .env en .env.example (voor hergebruik)
+git clone <repository-url>
 
-type daarna in je terminal : php artisan key:generate
+2. Dependencies installeren
+Ga in de terminal naar de map van het zojuist gedownloade project en voer uit:
+
+composer install
+
+3. .env bestand aanmaken
+Kopieer het voorbeeldbestand en hernoem het naar .env:
+
+cp .env.example .env
+
+Resultaat:
+- .env
+- .env.example (voor hergebruik)
+
+4. Applicatiesleutel genereren
+Genereer de Laravel applicatiesleutel met:
+
+php artisan key:generate
+
+Je project is nu klaar voor gebruik.
